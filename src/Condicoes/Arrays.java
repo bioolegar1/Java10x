@@ -12,6 +12,22 @@ public class Arrays {
         ninja[4] = "Kakashi Katake";
         System.out.println(ninja[3]);
 
+        //Redeclarar um array
+        ninja = new String[7];
+        ninja[0] = "Hashirama Senju";
+        ninja[1] = "Tobirama Senju";
+        ninja[2] = "Hiruzen Sarutobi";
+        ninja[3] = "Minato Namikaze";
+        ninja[4] = "Tsunade";
+        ninja[5] = "kakashi Hatake";
+        ninja[6] = "Naruto Uzumaki";
+
+        //for para fazer um loop num array
+        for (int i = 0; i < 7; i++) {
+            System.out.println(ninja[i]);
+
+        }
+
         //array int
         int [] idade = new int[2];
         idade[0] = 16; // array vazio sempre retorna 0 como valor
