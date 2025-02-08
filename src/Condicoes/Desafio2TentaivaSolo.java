@@ -12,12 +12,13 @@ public class Desafio2TentaivaSolo {
         int ninjasRegistred = 0;
 
         int option = 0;
-        while (option != 3) {
+        while (option != 4) {
 
             System.out.println("\n ===== Menu Ninja ====");
             System.out.println("1. Cadastrar Ninjas");
             System.out.println("2. Listar Ninjas");
-            System.out.println("3. Sair");
+            System.out.println("3. Excluir Ninjas");
+            System.out.println("4. Sair");
             System.out.println("Escolha uma opção");
             option = scanner.nextInt();
             scanner.nextLine();
@@ -41,12 +42,39 @@ public class Desafio2TentaivaSolo {
                 break;
 
                 case 3: {
+                    System.out.println( ninjasRegistred == 0 ? "Nenhum Ninja Cadastrado!": "==== Lista de Ninjas ====");
+                        for (int i = 0; i < ninjasRegistred; i++) {
+                            System.out.println((i + 1) + ". " + ninjas[i]);
+                        }
+
+                        System.out.println("Digite o número do Ninja que deseja excluir: ");
+                        int index = scanner.nextInt();
+                        scanner.nextLine();
+
+
+                        if(index < 1 || index > ninjasRegistred) {
+                            System.out.println("Numero inválido!Tente novamente!");
+                        } else {
+                            index--;
+
+                            for (int i = index; i < ninjasRegistred -1; i++) {
+                                ninjas[i] =  ninjas[i+1];
+                                }
+
+                                ninjas[--ninjasRegistred] = null;
+                                System.out.println("Ninja Excluido com sucesso!");
+                        }
+                }
+                break;
+
+                case 4: {
                     System.out.println("Estamos Finalizando o programa");
                 }
                 break;
 
             }
-            scanner.close();
+
         }
+        scanner.close();
     }
 }
