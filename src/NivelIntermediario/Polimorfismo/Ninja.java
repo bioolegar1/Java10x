@@ -1,10 +1,23 @@
+//SUPERCLASSE
+
+
 package NivelIntermediario.Polimorfismo;
 
-public class NinjaPoli {
+public abstract class Ninja implements estrategiaDeBatalha{
 
     String nome;
     String aldeia;
     int idade;
+
+
+    public Ninja() {
+    }
+
+    public Ninja(String nome, String aldeia, int idade) {
+        this.nome = nome;
+        this.aldeia = aldeia;
+        this.idade = idade;
+    }
 
 
     //metodo Geral!! Todos os Ninjas Vão ter
@@ -17,6 +30,15 @@ public class NinjaPoli {
         System.out.println("Aldeia: " + aldeia);
         System.out.println("Idade: " + idade);
     }
+
+
+    //metodo abstrato - obrigatório em todas as classes
+    @Override
+    public void estrategiaDeBatalhaNinja() {
+        System.out.println("essa é minha estrategia de Combate!!");
+    }
+
+
 
 }
 

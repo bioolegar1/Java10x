@@ -1,22 +1,24 @@
 package NivelIntermediario.Desafio3;
 
 public class Uchiha extends Ninja{
+        private String habilidadeEspecial;
 
-    String habiliadeEspecial;
+        public Uchiha (String nome, int idade, String missao, String nivelDificuldade, String statusMissao) {
+            super(nome, idade, missao, nivelDificuldade, statusMissao);
+            this.habilidadeEspecial = habilidadeEspecial;
+        }
 
-    public void setHabiliadeEspecial(){
-        System.out.println("Habilidade de Especial Uchiha");
+    public Uchiha() {
+        super();
     }
 
-
-    public void mostraInformacoes(){
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Missao: " + missao);
-        System.out.println("Nivel de dificuldade: " + nivelDificuldade);
-        System.out.println("Status: " + statusMissao);
-        System.out.println("Sharingan !!! " + habiliadeEspecial);
+    @Override
+    public void mostrarInformacoes() {
+            super.mostrarInformacoes();
+        System.out.println("Habilidade de Especial: " + habilidadeEspecial);
     }
 
-
+    public void mostrarHabilidadeEspecial() {
+        System.out.println(nome + " possui a habilidade especial: " + habilidadeEspecial);
+    }
 }
