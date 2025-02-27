@@ -28,4 +28,13 @@ public class Hatake extends Ninja implements SharinganInterface, AnbuInterface, 
     public void Chidori() {
         System.out.println(nome + " é capaz de Utilizar o chidori!");
     }
+
+    @Override
+    public void habilidadeEspecial() {
+        System.out.println(nome + " é meu nome e vou usar um mangekyou sharingan!, eu ja completei:"  + numeroDeMissoesConcluidas);
+    }
+
+    public Hatake(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, RankNinja rank) {
+        super(nome, aldeia, idade, numeroDeMissoesConcluidas, rank);
+    }
 }

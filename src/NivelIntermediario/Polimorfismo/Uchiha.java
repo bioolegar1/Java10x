@@ -14,12 +14,12 @@ public class Uchiha extends Ninja  implements SharinganInterface{
     // subscrever o metodo ninja
     @Override
     public void habilidadeEspecial() {
-        System.out.println("Meu nome é " + nome + " Esse é meu ataque Uchiha, um ataque de fogo" );
+        System.out.println("Meu nome é " + nome + " Esse é meu ataque Uchiha, um ataque de fogo, eu ja completei: " + numeroDeMissoesConcluidas );
     }
 
     @Override
     public void estrategiaDeBatalhaNinja() {
-        System.out.println("Meu nome é Sasuke!! e essa é minha tecnica de combate!");    }
+        System.out.println("Meu nome é " + nome +"!! e essa é minha tecnica de combate!");    }
 
     @Override
     public void sharinganAtivado() {
@@ -29,5 +29,9 @@ public class Uchiha extends Ninja  implements SharinganInterface{
     @Override
     public void Chidori() {
         System.out.println(nome + " Usou o golpe de Raios Chidori");
+    }
+
+    public Uchiha(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, RankNinja rank) {
+        super(nome, aldeia, idade, numeroDeMissoesConcluidas, rank);
     }
 }
