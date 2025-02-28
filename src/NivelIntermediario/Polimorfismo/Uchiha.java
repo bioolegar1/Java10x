@@ -34,4 +34,26 @@ public class Uchiha extends Ninja  implements SharinganInterface{
     public Uchiha(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, RankNinja rank) {
         super(nome, aldeia, idade, numeroDeMissoesConcluidas, rank);
     }
+
+    @Override
+    public void inteligenciaDeCombate() {
+        System.out.println("Meu nome é " + nome + ", Essa é minha INTELIGENCIA DE COMBATE!!!");
+    }
+
+
+    @Override
+    public void inteligenciaDeCombate(int qi) {
+        if (qi > 150) {
+            System.out.println("Seu QI é: " + qi +  " e você é um gênio ");
+        } else if (qi >= 130) {
+            System.out.println("Seu QI é: " + qi +  " e você é ninja promissor ");
+        } else {
+            System.out.println("Seu QI é: " + qi +  " e você treinar mais suas habilidades ");
+        }
+    }
+
+    @Override
+    void metodoProvisorio() {
+        System.out.println("Teste na classe uchiha!");
+    }
 }

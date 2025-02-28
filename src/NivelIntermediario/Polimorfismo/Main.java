@@ -27,14 +27,25 @@ public class Main {
         madara.habilidadeEspecial();
         madara.estrategiaDeBatalhaNinja();
         madara.sharinganAtivado();
+        //metodo comum
+        madara.inteligenciaDeCombate();
+        //sobrecarregado metod
+        madara.inteligenciaDeCombate(90);
 
 
         System.out.println("\n ==========================\n");
 
-        Uchiha itachi =new Uchiha("Itachi Uchiha", "Aldeia da Folha", 21,  135, RankNinja.JOUNIN );
+        Uchiha itachi =new Uchiha(
+                "Itachi Uchiha",
+                "Aldeia da Folha",
+                21,
+                135,
+                RankNinja.JOUNIN );
+
         itachi.mostrarDados();
         itachi.habilidadeEspecial();
         itachi.sharinganAtivado();
+        itachi.metodoProvisorio();
 
         System.out.println("\n ==========================\n");
 

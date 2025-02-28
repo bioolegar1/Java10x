@@ -49,13 +49,33 @@ public abstract class Ninja implements estrategiaDeBatalha{
 
 
     //metodo abstrato - obrigatório em todas as classes
-    @Override
+
     public void estrategiaDeBatalhaNinja() {
         System.out.println("essa é minha estrategia de Combate!!");
     }
 
+    //Sobrecarga de metodos -  INTELIGENCIA DE COMBATE
 
 
+
+    public void inteligenciaDeCombate() {
+        System.out.println("Meu nome é " + nome + ", Essa é minha INTELIGENCIA DE COMBATE!!!");
+    }
+
+    public void inteligenciaDeCombate(int qi) {
+        if (qi > 150) {
+            System.out.println("Seu QI é: " + qi +  "e você é um gênio ");
+        } else if (qi >= 130) {
+            System.out.println("Seu QI é: " + qi +  "e você é ninja promissor ");
+        } else {
+            System.out.println("Seu QI é: " + qi +  "e você treinar mais suas habilidades ");
+        }
+    }
+
+    //metodo sem @overrride
+    void metodoProvisorio(){
+        System.out.println("teste na classe ninja!!");
+    }
 }
 
 
