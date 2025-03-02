@@ -9,6 +9,9 @@ public class Main {
         System.out.println("---------------------Naruto---------------------");
         Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da folha", 16, 22, RankNinja.GENIN);
         System.out.println(naruto);
+        naruto.tacarKunai();
+        System.out.println(naruto.altura);
+
 
 
         //obj Uchiha
@@ -16,6 +19,11 @@ public class Main {
         Uchiha sasuke = new Uchiha("Sasuke Uchiha","Aldeia da Folha",17, 25, RankNinja.GENIN);
         System.out.println(sasuke);
 
+        System.out.println("\n---------------------anbu---------------------\n");
 
+        Anbu ninjaAnbu = new Anbu();
+        ninjaAnbu.nome = "Ninja aleatório";
+        System.out.println(ninjaAnbu.nome);
+        
     }
 }
