@@ -1,6 +1,5 @@
-package Condicoes;
+package Iniciante.Condicoes;
 
-import javax.xml.transform.Source;
 import java.util.Scanner;
 
 public class Desafio2Arrays {

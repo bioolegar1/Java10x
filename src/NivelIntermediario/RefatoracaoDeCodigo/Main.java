@@ -10,9 +10,7 @@ public class Main {
 
         System.out.println("\n ----");
 
-
         Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 16, 20, 1.69, BijuENUM.KURAMA);
         naruto.mostrarDados();
-
     }
 }

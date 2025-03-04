@@ -1,4 +1,4 @@
-package Condicoes;
+package Iniciante.Condicoes;
 
 public class Desafio1_3ninjas {
     public static void main(String[] args) {

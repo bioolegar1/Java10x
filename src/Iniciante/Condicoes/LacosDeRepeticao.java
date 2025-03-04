@@ -1,6 +1,4 @@
-package Condicoes;
-
-import java.awt.font.FontRenderContext;
+package Iniciante.Condicoes;
 
 public class LacosDeRepeticao {
     public static void main(String[] args) {

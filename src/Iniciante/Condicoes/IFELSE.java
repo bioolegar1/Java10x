@@ -1,10 +1,10 @@
-package Condicoes;
+package Iniciante.Condicoes;
 
 public class IFELSE {
     public static void main(String[] args) {
 
         /*
-        IF e ELSE - Condicoes
+        IF e ELSE - Iniciante.Iniciante.Condicoes.Condicoes
         Else IF
         Objetivo: Passar o nunja de nivel, conforme o número de missoes
 

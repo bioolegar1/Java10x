@@ -1,4 +1,4 @@
-package TiposDeDados;
+package Iniciante.TiposDeDados;
 
 public class DadosPrimitivos {
 
